@@ -103,7 +103,7 @@ module.exports = function (environment) {
     ENV.rootURL =
       process.env.CONTEXT === 'deploy-preview'
         ? process.env.DEPLOY_PRIME_URL
-        : 'https://text2stl.mestres.fr/';
+        : 'https://text2stl.vercel.app/';
   }
 
   return ENV;
