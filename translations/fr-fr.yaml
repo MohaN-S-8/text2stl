@@ -1,0 +1,148 @@
+app_name: Text2STL
+app_title: Générateur gratuit de text 3D imprimable
+app_subtitle: Generer du text 3D imprimable en un clique
+index_page:
+  title: Generer du text 3D imprimable n'a jamais été aussi simple !
+  list:
+    font:
+      dt: Police personnalisée
+      dd: Utilisez une police parmis plus de 1000 polices Google ou utilisez la vôtre
+    shape:
+      dt: Forme personnalisée
+      dd: Choisissez parmis plusieur forme (avec ou sans support, texte inversé).
+    text:
+      dt: Texte personnalisé
+      dd: Vous choisissez le text à imprimer.
+    settings:
+      dt: Réglages personnalisés
+      dd: Affinez les réglages, taille de police, hauteur du support et/ou du texte...
+    stl:
+      dt: Fichier STL
+      dd: Exportez votre fichier STL en un clique !
+  image_alt: Texte 3D imprimable
+  button: Commencez ...
+mm_unit: mm
+settings_form:
+  label: Réglages
+  tabs:
+    shape:
+      heading: Type de forme
+      description: Verticale, negative, text seulement
+    text:
+      heading: Réglages du text
+      description: Taille de text, hauteur, alignement
+    font:
+      heading: Police
+      description: Choisissez une police Google ou un fichier police personnalisé
+    support:
+      heading: Support
+      description: Espacement du support, hauteur, arrondis
+    handle:
+      heading: Fixation
+      description: Réglage de la poigné ou du trou
+export_file: Exporter {type}
+export_file_type: Exporter un fichier .{type}
+stl_counter: '{count} fichiers STL ont été générés'
+info:
+  label: À propos de Text2STL
+  made_by: Créer avec ♥ par {author} avec {ember} & {three}
+  github: Contribuez ou faite un fork sur GitHub
+issue:
+  label: Un bug ?
+  info: "Avant de soumettre un bug, merci de lire ce qui suit :"
+  know_bug:
+    free: <b>Ceci est un outil gratuit fait sur mon temps libre</b>. Soyez indulgent & essayez de donner autant de détails que possible.
+    font: <b>Certaines polices ne fonctionnent pas correctement</b>. Il s'agit d'un problème connu dû à une librairie externe utilisée par cet outil.
+    font1: Merci de ne pas ouvrir de bug si certains caractères de la police ne fontionnent pas correctement (sauf si vous êtes sûr qu'il s'agit d'un comportement  "anormal"), essayez de trouver une autre police.
+    emoji: <b>Certains emojis ne fonctionnent pas correctement</b>. Il s'agit d'un problème connu dû à une librairie externe utilisée par cet outil.
+    emoji1: Vous pouvez essayer d'utiliser une autre "version" du même emoji, par exemple 🤍 au lieu de ❤️.
+    emoji2: Merci de ne pas ouvrir de bug pour si un seul emoji ne fonctionne pas correctement.
+    three_js: Si vous avez des connaissances à propos de Three.js et/ou des SVG, vous pouvez jeter un coup d'oeil à <a href="https://github.com/mrdoob/three.js/issues/26613" target="_blank">ce bug Three.js</a>.
+    gh_account: Vous aurez besoin d'un compte <a href="https://github.com/" target="_blank">Github</a> pour ouvrir un bug
+    submit: Ouvrir un bug sur Github
+font_picker:
+  category: Category de police
+  name: Police actuelle
+  variant: Variante de police
+  size: Taille de police
+  script_filter:
+    label: Script
+    placeholder: Tous les scripts
+  sort:
+    label: Trier les polices par
+    options:
+      alphabet: Ordre alphabetique
+      popularity: Popularité
+text_settings:
+  text: Texte
+  text_placeholder: Entrer votre texte...
+  size: Taille du texte
+  height: Hauteur du texte
+  kerning: Espacement du texte
+  vkerning: Espacement des lignes
+  supportHeight: Hauteur du support
+  supportPadding: Espacement du support
+  advancedSupportPadding: Espacement du support avancé
+  alignment: Alignement du texte
+  valignment: Alignement vertical du texte
+  supportBorderRadius: Rayon des coins
+  handleSettings:
+    label: Option de fixation
+    type:
+      label: Type
+      none: Aucune
+      hole: Trou
+      handle: Poignée
+    position: Position
+    size: Taille
+    size2: Largeur
+    offsetX: Décalage X
+    offsetY: Décalage Y
+alignment:
+  left: Gauche
+  center: Centré
+  right: Droite
+valignment:
+  default: Auto
+  top: Haut
+  bottom: Bas
+directions:
+  top: Haut
+  bottom: Bas
+  left: Gauche
+  right: Droite
+three_preview:
+  size: "Taille d'impression : {x} x {y} x {z} mm"
+text_type:
+  1: Text seul
+  2: Text avec support
+  3: Text negatif sur support
+  4: Text vertical avec support
+  5: Text avec accroche
+custom_font:
+  ck_label: Utiliser une police personnalisé
+  current_label: Fichier actuel
+  no_font: Aucun
+  upload:
+    title: Choisir un fichier
+    drop_zone: Utiliser un fichier police personalisé en déposant un fichier (woff, otf, ttf) ici ou
+    input_label: parcourir votre ordinateur & selectionner un fichier
+    bad_file_type: Format de fichier non supporté, veuillez utiliser un fichier .woff, .otf ou .ttf
+errors:
+  font_load_generic: Erreur de chargement de la police
+  unknown_font: Police non trouvée dans la liste
+seo:
+  description: Générer du texte 3D en 1 click ! Choisissez une police parmi plus de 1000 polices Google ou utilisez la vôtre, différentes formes et réglagles & téléchargez un fichier STL à imprimer.
+save: enregister les réglages
+reset: Restaurer les réglages
+save_modal:
+  title: Enregistrer vos réglages actuels
+  info: Ajouter l''<a href="{currentUrl}">URL actuelle</a> de la page à vos favoris ou enregistrer l''URL ci dessous pour facilement retrouvé les réglages actuels.
+  close: Fermer
+switch_theme_tooltip: Changer pour le thème {current, select, light {foncé} dark {clair} other {clair}}
+reset_modal:
+  title: Restaurer tous les réglages
+  info: Tous vos réglages seront perdus, être vous sûre de vouloir restaurer tous les réglages à leur valeur par défaut ?
+  cancel: Annuler
+  reset: Restaurer les réglages
+font_loading: Chargement des polices Google, veuillez patienter...
